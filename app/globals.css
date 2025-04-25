@@ -1,12 +1,13 @@
 @import "tailwindcss";
 
+
 :root {
     --background: #171717;
     --foreground: #ffffff;
     --medium: #686868;
     --accent: #ff6b6b;
     --highlight: #2c2c2c;
-  --font-sans: 'Inter', sans-serif;
+  --font-sans:  'Bangers, cursive';
   --font-mono: 'Fira Code', monospace;
 }
 
