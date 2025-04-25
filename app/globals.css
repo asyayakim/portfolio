@@ -1,26 +1,125 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --background: #171717;
+    --foreground: #ffffff;
+    --medium: #686868;
+    --accent: #ff6b6b;
+    --highlight: #2c2c2c;
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'Fira Code', monospace;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+article{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: var(--highlight);
+  border-radius: 8px;
+  margin: 10px;
+}
+
+main {
+  margin-top: 4vh;
+  margin-bottom: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 115vh;
+  padding: 1.5rem;
+ }
+
+main > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+header,
+footer {
+  background: var(--background);
+  color: var(--foreground);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 14px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 10px;
+}
+
+
+.pixel-art {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: pixelated;
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.group:hover .pixel-art {
+  filter: 
+    brightness(1.05) 
+    contrast(1.1) 
+    drop-shadow(0 0 2px var(--accent));
+}
+
+@media (min-width: 1024px) {
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 320px));
+  }
+}
+@media (min-width: 768px) {
+  main {
+    padding: 3rem;
+  }
+
+  header,
+  footer {
+    padding: 15px 30px;
+  }
+
+  header {
+    font-size: 16px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
 }

@@ -1,0 +1,56 @@
+import Link from "next/link";
+
+    const projects = [
+      {
+        id: 1,
+        slug: "project-1",
+        name: "Project 1",
+        title: "Project 1",
+        description: "Description of project 1.",
+        link: "/projects/project1",
+      },
+      {
+        id: 2,
+        slug: "project-2",
+        name: "Project 2",
+        title: "Project 2",
+        description: "Description of project 2.",
+        link: "/projects/project2",
+      },
+      {
+        id: 3,
+        slug: "project-3",
+        name: "Project 3",
+        title: "Project 3",
+        description: "Description of project 3.",
+        link: "/projects/project3",
+      },
+    ];
+
+const PortfolioPage = () => {
+  return (
+    <main className="container mx-auto px-4 py-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {projects.map((project, index) => (
+          <article
+            key={index}
+            className="group bg-highlight p-4 rounded-lg border-2 border-medium hover:border-accent transition-all duration-300"
+          >
+            <div className="relative overflow-hidden rounded-md mb-4">
+              <h4 className="font-mono text-lg text-accent">{project.title}</h4>
+              <p className="text-medium text-sm">{project.description}</p>
+            </div>
+            <Link
+              href={`/projects/${project.slug}`}
+              className="text-blue-500 underline"
+            >
+              View Project
+            </Link>
+          </article>
+        ))}
+      </div>
+    </main>
+  );
+}
+
+export default PortfolioPage;
