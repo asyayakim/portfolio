@@ -4,24 +4,24 @@ import Link from "next/link";
       {
         id: 1,
         slug: "project-1",
-        name: "Project 1",
-        title: "Project 1",
+        name: "Hotel Booking",
+        title: "Hotel Booking",
         description: "Description of project 1.",
         link: "/projects/project1",
       },
       {
         id: 2,
         slug: "project-2",
-        name: "Project 2",
-        title: "Project 2",
+        name: "Library",
+        title: "Library",
         description: "Description of project 2.",
         link: "/projects/project2",
       },
       {
         id: 3,
         slug: "project-3",
-        name: "Project 3",
-        title: "Project 3",
+        name: "Job-tracker",
+        title: "Job-tracker",
         description: "Description of project 3.",
         link: "/projects/project3",
       },
@@ -34,7 +34,7 @@ const PortfolioPage = () => {
         {projects.map((project, index) => (
           <article
             key={index}
-            className="group bg-highlight p-4 rounded-lg border-2 border-medium hover:border-accent transition-all duration-300"
+            className="group bg-highlight p-4 border-2 border-medium hover:border-accent transition-all duration-300"
           >
             <div className="relative overflow-hidden rounded-md mb-4">
               <h4 className="text-300">{project.title}</h4>

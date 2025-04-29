@@ -27,10 +27,11 @@ article{
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  border-radius: 8px;
   margin: 10px;
 }
-
+li {
+  list-style:square;
+}
 main {
   margin-top: 4vh;
   margin-bottom: 5vh;

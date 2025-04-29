@@ -35,6 +35,14 @@ export default function MainNav (){
                 Contact
               </Link>
             </li>
+            <li>
+              <Link
+                href="/pixelart"
+                className="hover:text-accent transition-colors"
+              >
+                Pixel Art
+              </Link>
+            </li>
           </ul>
         </nav>
       </header>
