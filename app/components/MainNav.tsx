@@ -3,7 +3,7 @@ export default function MainNav (){
   
     return (
       <header className="bg-foreground text-background w-full fixed top-0 left-0 right-0 z-50 shadow-md">
-        <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
+        <nav className="container mx-auto px-6 py-4 flex items-center justify-between font-sans">
           <Link
             href="/"
             className="text-2xl font-bold hover:text-accent transition-colors"

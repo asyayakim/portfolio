@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Bangers } from "next/font/google";
+import {
+  Geist,
+  Pixelify_Sans,
+} from "next/font/google";
 import "./globals.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
@@ -10,15 +13,12 @@ const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
-const bangers = Bangers({
-  variable: "--font-bangers",
+const pixelfy = Pixelify_Sans({
+  variable: "--pixel-font",
   subsets: ["latin"],
   weight: "400",
 });
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -30,9 +30,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
   return (
-    <html lang="en">
-      <body className={`${bangers.variable} ${bangers.variable} antialiased`}>
+    <html lang="en" className={`${pixelfy.variable}`}>
+      <body className={`${pixelfy.variable} antialiased`}>
         <Header />
         {children}
         <Footer />

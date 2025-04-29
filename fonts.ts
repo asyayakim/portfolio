@@ -1,10 +1,10 @@
 
-import { Bangers } from "next/font/google";
+import { Bangers, Pixelify_Sans } from "next/font/google";
 
-export const bangers = Bangers({
+export const pixelfy = Pixelify_Sans({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-bangers", 
+  variable: "--pixel-font", 
     weight: "400",
 });
 

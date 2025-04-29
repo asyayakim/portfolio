@@ -7,7 +7,7 @@
     --medium: #686868;
     --accent: #ff6b6b;
     --highlight: #2c2c2c;
-  --font-sans:  'Bangers, cursive';
+  --font-sans:  var(--pixel-font);
   --font-mono: 'Fira Code', monospace;
 }
 
@@ -20,14 +20,13 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans) sans-serif;
   line-height: 1.6;
 }
 article{
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background: var(--highlight);
   border-radius: 8px;
   margin: 10px;
 }

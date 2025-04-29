@@ -40,11 +40,11 @@ const Home = () => {
 
   return (
     <main className="">
-      <h1 className="text-4xl font-bold mb-6 font-mono">Innhold:</h1>
+      <h1 className="text-4xl font-bold">Innhold:</h1>
 
       <section className="space-y-8 max-w-6xl mx-auto">
         <article className="bg-highlight p-6 rounded-xl border-2 border-medium">
-          <h3 className="text-2xl font-semibold mb-4 font-mono">
+          <h3 className="text-2xl font-semibold">
             Asia
           </h3>
           <p className="text-medium leading-relaxed">
@@ -55,7 +55,7 @@ const Home = () => {
           </p>
         </article>
         <section className="space-y-6">
-          <h3 className="text-2xl font-semibold font-mono">Pixel Verker</h3>
+          <h3 className="text-2xl font-semibold">Pixel Verker</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {works.map((work, index) => (
               <article
@@ -74,12 +74,12 @@ const Home = () => {
                   />
                 </div>
                 <div className="space-y-2">
-                  <h4 className="font-mono text-lg text-accent">
+                  <h4 className="text-lg text-accent">
                     {work.title}
                   </h4>
                   <p className="text-medium text-sm">{work.description}</p>
                   {work.note && (
-                    <p className="text-xs text-medium italic">{work.note}</p>
+                    <p className="text-xs text-medium">{work.note}</p>
                   )}
                 </div>
               </article>
@@ -87,7 +87,7 @@ const Home = () => {
           </div>
         </section>
         <article className="bg-highlight p-6 rounded-xl border-2 border-medium">
-          <h3 className="text-2xl font-semibold mb-4 font-mono">
+          <h3 className="text-2xl font-semibold mb-4">
             Tekniske Detaljer
           </h3>
           <div className="grid grid-cols-2 gap-4 text-medium">

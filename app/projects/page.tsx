@@ -37,7 +37,7 @@ const PortfolioPage = () => {
             className="group bg-highlight p-4 rounded-lg border-2 border-medium hover:border-accent transition-all duration-300"
           >
             <div className="relative overflow-hidden rounded-md mb-4">
-              <h4 className="font-mono text-lg text-accent">{project.title}</h4>
+              <h4 className="text-300">{project.title}</h4>
               <p className="text-medium text-sm">{project.description}</p>
             </div>
             <Link
