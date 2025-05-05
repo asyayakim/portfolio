@@ -6,15 +6,15 @@ export default function MainNav (){
         <nav className="container mx-auto px-6 py-4 flex items-center justify-between font-sans">
           <Link
             href="/"
-            className="text-2xl font-bold hover:text-accent transition-colors"
+            className="text-2xl text-purple-300 font-bold hover:text-purple-700 transition-colors"
           >
-            My Portfolio
+            Portfolio
           </Link>
           <ul className="flex gap-6 text-sm font-semibold uppercase tracking-wide">
             <li>
               <Link
                 href="/aboutme"
-                className="hover:text-accent transition-colors"
+                className="hover:text-purple-700 transition-colors"
               >
                 About Me
               </Link>
@@ -22,7 +22,7 @@ export default function MainNav (){
             <li>
               <Link
                 href="/projects"
-                className="hover:text-accent transition-colors"
+                className="hover:text-purple-700 transition-colors"
               >
                 Projects
               </Link>
@@ -30,7 +30,7 @@ export default function MainNav (){
             <li>
               <Link
                 href="/aboutme/contact"
-                className="hover:text-accent transition-colors"
+                className="hover:text-purple-700 transition-colors"
               >
                 Contact
               </Link>
@@ -38,7 +38,7 @@ export default function MainNav (){
             <li>
               <Link
                 href="/pixelart"
-                className="hover:text-accent transition-colors"
+                className="hover:text-purple-700  transition-colors"
               >
                 Pixel Art
               </Link>

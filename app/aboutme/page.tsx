@@ -22,32 +22,21 @@ const AboutMe = () => {
   return (
     <main className="">
       <div className="flex items-center justify-center ">
-        <article>
-          <h1>Portfolio</h1>
-          <p>This is a portfolio page.</p>
-          <p>
-            My name is Asia, and I am a software developer with a passion for
-            creating innovative solutions.
-          </p>
-          <p>
-            I have experience in various programming languages and frameworks,
-            and I love to learn new technologies.
-          </p>
-          <p>
-            In my free time, I enjoy hiking, reading, and exploring new places.
-          </p>
-          <p>
-            If you would like to know more about my work or get in touch, feel
-            free to reach out!
-          </p>
-          <p>Thank you for visiting my portfolio!</p>
-          <p>
-            Feel free to check out my projects and contact me for any inquiries.
-          </p>
-          <p>Looking forward to connecting with you!</p>
-          <p>Best regards,</p>
-          <p>Asia</p>
-          <p>Software Developer</p>
+        <article className="pixel-tech-box-main">
+          <h1 className="text-2xl ">About me</h1>
+          <p>Hello! I'm Asia, a dedicated software developer with a background in academic art education. After years in the creative field, I made the exciting leap into tech to pursue my passion for building innovative digital solutions.</p>
+
+          <p>My journey into software development has been fueled by curiosity, continuous learning, and a drive to create meaningful applications. I specialize in full-stack development and enjoy working across different technologies and frameworks to bring ideas to life.</p>
+
+          <p>I’m particularly drawn to clean architecture, intuitive design, and problem-solving in real-world scenarios. Whether it's developing a responsive UI, optimizing backend performance, or learning the latest in cloud infrastructure—I'm always eager to dive in.</p>
+
+          <p>Outside of development, I enjoy staying active through hiking, yoga, and personal fitness. I believe that a balanced lifestyle enhances creativity and focus—both essential in the tech world.</p>
+
+          <p>Feel free to explore my projects, and don’t hesitate to reach out if you're interested in collaborating or have any questions. I'm always open to new opportunities and connections in the development community.</p>
+
+          <p>Thanks for stopping by!</p>
+
+          <p>— Asia<br />Software Developer</p>
         </article>
         {works.map((work, index) => (
           <article
@@ -80,7 +69,7 @@ const AboutMe = () => {
               )}
             </div>
             <div className="mt-4 space-y-2">
-              <h3 className="font-mono text-lg">{work.title}</h3>
+              <h3 className=" text-lg">{work.title}</h3>
               <p className="text-medium text-sm">{work.description}</p>
               {work.note && <p className="text-accent text-xs">{work.note}</p>}
             </div>

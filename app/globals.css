@@ -9,7 +9,77 @@
     --highlight: #2c2c2c;
   --font-sans:  var(--pixel-font);
   --font-mono: 'Fira Code', monospace;
+  --pixel-dark: #1a1a1a;
+  --pixel-darker: #0d0d0d;
+  --pixel-green: #00ff00;
+  --pixel-cyan: #00ffff;
+  --pixel-pink: #ff00ff;
+  --pixel-yellow: #ffff00;
+  --pixel-blue: #0000ff;
+  --pixel-purple: #800080;
+  --pixel-orange: #ffa500;
+  --pixel-white: #ffffff;
 }
+.pixel-tech-box-main {
+  border: 3px solid var(--pixel-pink);
+  padding: 2rem;
+  box-shadow: 4px 4px 0 var(--pixel-cyan);
+  margin: 2rem;
+}
+.pixel-tech-box {
+  border: 3px solid var(--pixel-green);
+  padding: 2rem;
+  background: var(--pixel-darker);
+  box-shadow: 4px 4px 0 var(--pixel-cyan);
+
+}
+.spasing {
+  margin-bottom: 1.5rem;
+}
+.pixel-tech-section{
+  margin: 2rem;
+  padding: 2rem;
+  border: 3px solid var(--pixel-cyan);
+  background: var(--pixel-darker);
+  box-shadow: 4px 4px 0 var(--pixel-green);
+}
+.pixel-tech-section-head{
+  border: 3px solid var(--pixel-orange);
+  padding: 2rem;
+  background: var(--pixel-darker);
+  box-shadow: 4px 4px 0 var(--pixel-cyan);
+}
+
+.pixel-button {
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--pixel-white);
+  color: var(--pixel-white);
+  text-decoration: none;
+  transition: all 0.2s;
+  font-family: monospace;
+}
+
+.pixel-button:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--pixel-white);
+}
+
+.glitch-text {
+  text-shadow: 2px 2px 0 var(--pixel-pink);
+  animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+  0% { transform: translate(0) }
+  20% { transform: translate(-2px, 2px) }
+  40% { transform: translate(-2px, -2px) }
+  60% { transform: translate(2px, 2px) }
+  80% { transform: translate(2px, -2px) }
+  100% { transform: translate(0) }
+}
+
+
+
 
 * {
   box-sizing: border-box;
@@ -27,8 +97,8 @@ article{
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  margin: 10px;
 }
+
 li {
   list-style:square;
 }
@@ -43,13 +113,7 @@ main {
   padding: 1.5rem;
  }
 
-main > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-}
+
 
 header,
 footer {
@@ -89,11 +153,10 @@ footer {
   image-rendering: -moz-crisp-edges;
   image-rendering: pixelated;
 }
-
-.font-mono {
-  font-family: var(--font-mono);
+video{
+  max-height: 256px;
+  max-width: 256px;
 }
-
 .group:hover .pixel-art {
   filter: 
     brightness(1.05) 

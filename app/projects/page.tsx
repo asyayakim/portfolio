@@ -6,7 +6,7 @@ import Link from "next/link";
         slug: "project-1",
         name: "Hotel Booking",
         title: "Hotel Booking",
-        description: "Description of project 1.",
+        description: "Full-stack hotel management system with advanced booking features",
         link: "/projects/project1",
       },
       {
@@ -14,7 +14,7 @@ import Link from "next/link";
         slug: "project-2",
         name: "Library",
         title: "Library",
-        description: "Description of project 2.",
+        description: "ASP.NET Core backend for library management system with PostgreSQL",
         link: "/projects/project2",
       },
       {
@@ -22,7 +22,7 @@ import Link from "next/link";
         slug: "project-3",
         name: "Job-tracker",
         title: "Job-tracker",
-        description: "Description of project 3.",
+        description: "Project is under development.",
         link: "/projects/project3",
       },
     ];
@@ -34,10 +34,10 @@ const PortfolioPage = () => {
         {projects.map((project, index) => (
           <article
             key={index}
-            className="group bg-highlight p-4 border-2 border-medium hover:border-accent transition-all duration-300"
+            className="pixel-tech-box-main"
           >
             <div className="relative overflow-hidden rounded-md mb-4">
-              <h4 className="text-300">{project.title}</h4>
+              <h4 className="text-xl text-cyan-200">{project.title}</h4>
               <p className="text-medium text-sm">{project.description}</p>
             </div>
             <Link
