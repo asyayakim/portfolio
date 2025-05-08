@@ -1,6 +1,8 @@
-import type { NextConfig } from "next";
+
 const isProd = process.env.NODE_ENV === 'production';
-const nextConfig: NextConfig = {
+
+
+const nextConfig = {
   images: {
     domains: [
       "pixeljoint.com",
@@ -16,7 +18,9 @@ const nextConfig: NextConfig = {
       "i.pinimg.com",
     ],
   },
-  /* config options here */
+  assetPrefix: isProd ? '/portfolio' : '',
+  basePath: isProd ? '/portfolio' : '',
+  output: 'export',
 };
 
 export default nextConfig;

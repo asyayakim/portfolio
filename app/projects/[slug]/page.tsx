@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import React from "react";
 type Project = {
   id: number;
   slug: string;
@@ -160,35 +161,23 @@ const projects: Project[] = [
     }
   },
 ];
-
-type Props = {
-  params: {
-    slug: string;
-  };
-  searchParams: { [key: string]: string | string[] | undefined };
-};
-
-export async function generateMetadata({
-  params,
-}: {
+interface PageProps {
   params: { slug: string };
-}): Promise<Metadata> {
+}
+export async function generateStaticParams(): Promise<PageProps["params"][]> {
+  return projects.map((p) => ({ slug: p.slug }));
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const project = projects.find((p) => p.slug === params.slug);
-
-  if (!project) {
-    return { title: "Project Not Found" };
-  }
-
   return {
-    title: `${project.id} - ${project.title}`,
-    description: project.description,
+    title: project ? `${project.id} – ${project.title}` : "Project Not Found",
+    description: project?.description,
   };
 }
-const fetchProject = async (slug: string) => {
-  return projects.find((p) => p.slug === slug);
-};
-const ProjectPage = async ({ params }: { params: { slug: string } }) => {
-  const project = await fetchProject(params.slug);
+export default function ProjectPage({ params }: PageProps) {
+  const project = projects.find((p) => p.slug === params.slug);
+
   if (!project) {
     return <div>Project not found</div>;
   }
@@ -277,5 +266,3 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
       </main>
   );
 };
-
-export default ProjectPage;

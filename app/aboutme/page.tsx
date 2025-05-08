@@ -56,7 +56,7 @@ const AboutMe = () => {
                   muted
                   autoPlay
                   playsInline
-                  className=" object-cover pixel-art"
+                  className="object-cover-pixel-art"
                 />
               ) : (
                 <img

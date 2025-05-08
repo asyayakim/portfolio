@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import {
-  Geist,
   Pixelify_Sans,
 } from "next/font/google";
 import "./globals.css";
@@ -9,10 +8,6 @@ import Footer from "./components/footer";
 
 
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 const pixelfy = Pixelify_Sans({
   variable: "--pixel-font",
   subsets: ["latin"],
