@@ -4,6 +4,7 @@ const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
   images: {
+    unoptimized: true,
     domains: [
       "pixeljoint.com",
       "lospec.com",
@@ -21,6 +22,8 @@ const nextConfig = {
   assetPrefix: isProd ? '/portfolio' : '',
   basePath: isProd ? '/portfolio' : '',
   output: 'export',
+  distDir: 'out',
+  trailingSlash: true,
 };
 
 export default nextConfig;
