@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import {
-  Pixelify_Sans,
-} from "next/font/google";
+import { Pixelify_Sans } from 'next/font/google'
 import "./globals.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
+import React from "react";
 
 
 
@@ -12,6 +11,8 @@ const pixelfy = Pixelify_Sans({
   variable: "--pixel-font",
   subsets: ["latin"],
   weight: "400",
+  display: 'swap',
+  preload: false,
 });
 
 
@@ -22,12 +23,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   
   return (
-    <html lang="en" className={`${pixelfy.variable}`}>
+      <html lang="en" className={pixelfy.variable}>
       <body className={`${pixelfy.variable} antialiased`}>
         <Header />
         {children}

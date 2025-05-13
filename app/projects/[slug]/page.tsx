@@ -161,10 +161,12 @@ const projects: Project[] = [
     }
   },
 ];
-interface PageProps {
-  params: { slug: string };
-}
-export async function generateStaticParams(): Promise<PageProps["params"][]> {
+type PageProps = {
+  params: {
+    slug: string
+  };
+};
+export function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
 }
 

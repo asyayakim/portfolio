@@ -1,26 +1,13 @@
+const isProd = process.env.NODE_ENV === 'production' ? '/portfolio': "";
 
-const isProd = process.env.NODE_ENV === 'production';
-
-
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: [
-      "pixeljoint.com",
-      "lospec.com",
-      "opengameart.org",
-      "artstation.com",
-      "cdn.pixabay.com",
-      "i.redd.it",
-      "pinterest.com",
-      "i.pinimg.com",
-      "media.discordapp.net",
-      "cdn.discordapp.com",
-      "i.pinimg.com",
-    ],
+    unoptimized: true,
   },
-  assetPrefix: isProd ? '/portfolio' : '',
-  basePath: isProd ? '/portfolio' : '',
   output: 'export',
+  basePath: isProd ? '/portfolio' : '',
+  assetPrefix: isProd ? '/portfolio/' : '',
 };
 
 export default nextConfig;
