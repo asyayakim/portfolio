@@ -1,6 +1,13 @@
 import Link from "next/link";
-
-    const projects = [
+interface Project {
+  id: number;
+  slug: string;
+  name: string;
+  title: string;
+  description: string;
+  link: string;
+}
+const projects: Project[] = [
       {
         id: 1,
         slug: "project-1",
