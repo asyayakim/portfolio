@@ -39,7 +39,7 @@ const LoadPictures = () => {
   ];
 
   return (
-    <main className="">
+    <main className="mt-[15vh] space-y-6">
       <h1 className="text-4xl font-bold">Some Works:</h1>
 
       <section className="space-y-8 max-w-6xl mx-auto">
