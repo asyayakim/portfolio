@@ -117,14 +117,14 @@ const projects: Project[] = [
     },
     links: {
       github: "https://github.com/asyayakim/BookLibrary",
-      adminDashboard:"https://github.com/asyayakim/BookLibrary-Frontend",
+      adminDashboard:"https://github.com/asyayakim/BookLibrary.Frontend",
     }
   },
   {
     id: 3,
     slug: "project-3",
     title: "Job-tracker",
-    description: "Description of project 3.",
+    description: "This project is under development and git hub links are not being provided.",
     link: "/projects/project3",
     details: {
       overview: [
@@ -156,8 +156,7 @@ const projects: Project[] = [
       }
     },
     links: {
-      github: "https://github.com/username/hotel-service",
-      adminDashboard: "/admin/dashboard"
+ 
     }
   },
 ];
@@ -257,10 +256,10 @@ export default function ProjectPage({ params }: PageProps) {
         <section className="pixel-tech-box-main">
           <h2 className="text-2xl text-pixel-blue mb-4">🔗 Links</h2>
           <div className="flex gap-4">
-            <a href={project.links.github} className="pixel-button bg-pixel-blue hover:bg-pixel-darkblue">
+            <a href={project.links?.github} className="pixel-button bg-pixel-blue hover:bg-pixel-darkblue">
               GitHub Repository Backend
             </a>
-            <a href={project.links.adminDashboard} className="pixel-button bg-pixel-purple hover:bg-pixel-darkpurple">
+            <a href={project.links?.adminDashboard} className="pixel-button bg-pixel-purple hover:bg-pixel-darkpurple">
               GitHub Repository Frontend
             </a>
           </div>
