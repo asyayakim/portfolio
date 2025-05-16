@@ -4,7 +4,8 @@
 
 A pixel-art styled portfolio showcasing web development projects, technical skills, and contact information. Built with modern web technologies and retro gaming aesthetics.
 
-![Project Preview](https://res.cloudinary.com/dlsmxoyd9/image/upload/v1747387714/U2tqZXJtYmlsZGVfMjAyNS0wNS0xNl8xMTI2NTdfamVjeW1t.png)
+![Project Preview](![image](https://github.com/user-attachments/assets/a8c0088e-053c-4eb7-9232-3a82c28919f8)
+)
 ## 🚀 Features
 - Pixel-art design theme
 - Project showcase section
