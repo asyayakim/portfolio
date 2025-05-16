@@ -1,22 +1,35 @@
-Live Demo
+# Pixel Portfolio – Personal Developer Site
 
-You can view the deployed portfolio here:  
-🔗 [https://pixel-portfolio-zeta.vercel.app/](https://pixel-portfolio-zeta.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-FF0000?style=for-the-badge&logo=vercel&logoColor=white)](https://pixel-portfolio-zeta.vercel.app/)
 
+A pixel-art styled portfolio showcasing web development projects, technical skills, and contact information. Built with modern web technologies and retro gaming aesthetics.
 
-Pixel Portfolio – Personal Developer Site
-This portfolio built with Next.js 14, Tailwind CSS, and TypeScript.
-This project showcases my personal work in pixel-art style as well as my web dev projects, skills, and contact information in a clean,
-pixel-inspired design using Google Fonts and custom color themes.
-Hope you will enjoy it!
+![Project Preview]([https://via.placeholder.com/800x400.png?text=Project+Preview+Placeholder](https://console.cloudinary.com/console/c-ab5ab26bad6e636c6c587f07859ba5/media_library/homepage/asset/91753b606fdaa22bec93a65a7aaff842/manage?context=manage)) 
+## 🚀 Features
+- Pixel-art design theme
+- Project showcase section
+- Skills matrix display
+- Contact form integration
+- Responsive layout
 
-🛠 Tech Stack
-Framework: Next.js 14
+## 🛠 Tech Stack
 
-Styling: Tailwind CSS
+### Framework
+- **Next.js 14** - App router and server components
 
-Font: Pixelify Sans – Google Fonts
+### Styling
+- **Tailwind CSS** - With custom color themes
 
-Deployment: Vercel and GitHub Pages
+### Typography
+- **[Pixelify Sans](https://fonts.google.com/specimen/Pixelify+Sans)** - Google Fonts
 
-Type Checking: TypeScript
+### Deployment
+- **Vercel** - Primary deployment platform
+- **GitHub Pages** - Mirror deployment
+
+### Type Safety
+- **TypeScript** - Static type checking
+
+---
+
+✨ **Special Note:** The pixel-art styling was carefully implemented using CSS transforms and custom animations to maintain that classic 8-bit aesthetic while keeping the bundle size optimized.
