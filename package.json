@@ -2,12 +2,13 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "npm run build",
+    "predeploy": "next build && echo > out/.nojekyll",
     "deploy": "gh-pages -d out"
   },
   "dependencies": {
@@ -17,14 +18,15 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "autoprefixer": "^10.4.21",
     "eslint": "^9",
     "eslint-config-next": "15.3.1",
     "gh-pages": "^6.3.0",
-    "tailwindcss": "^4",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.3",
     "typescript": "^5"
   },
   "homepage": "https://asyayakim.github.io/portfolio"
