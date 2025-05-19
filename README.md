@@ -35,3 +35,5 @@ A pixel-art styled portfolio showcasing web development projects, technical skil
 ---
 
 ✨ **Special Note:** The pixel-art styling was carefully implemented using CSS transforms and custom animations to maintain that classic 8-bit aesthetic while keeping the bundle size optimized.
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=asyayakim&layout=compact)
