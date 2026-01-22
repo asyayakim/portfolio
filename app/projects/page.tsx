@@ -6,6 +6,7 @@ interface Project {
   title: string;
   description: string;
   link: string;
+  liveDemo?: string;
 }
 const projects: Project[] = [
       {
@@ -14,7 +15,8 @@ const projects: Project[] = [
         name: "Hotel Booking",
         title: "Hotel Booking",
         description: "Full-stack hotel management system with advanced booking features",
-        link: "/projects/project1",
+    link: "/projects/project1",
+        liveDemo: "https://product-service-frontend-git-main-asyayakims-projects.vercel.app",
       },
       {
         id: 2,
@@ -27,10 +29,11 @@ const projects: Project[] = [
       {
         id: 3,
         slug: "project-3",
-        name: "Job-tracker",
-        title: "Job-tracker",
-        description: "Project is under development.",
+        name: "Charity Store",
+        title: "Charity Store",
+        description: "An online charity store that allows users to browse and purchase donated products while supporting charitable causes.",
         link: "/projects/project3",
+        liveDemo: "https://product-service-frontend-git-main-asyayakims-projects.vercel.app",
       },
     ];
 
@@ -53,6 +56,14 @@ const PortfolioPage = () => {
             >
               View Project
             </Link>
+            {project.liveDemo && (
+              <Link
+                href={project.liveDemo}
+                className="ml-4 text-blue-500 underline"
+              >
+                Live Demo
+              </Link>
+            )}
           </article>
         ))}
       </div>

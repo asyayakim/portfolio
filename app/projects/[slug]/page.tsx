@@ -68,7 +68,7 @@ const projects: Project[] = [
     },
     links: {
       github: "https://github.com/asyayakim/HotelService",
-      adminDashboard: "https://github.com/asyayakim/hotel-service-frontend"
+      liveDemo: "https://hotel-service-frontend-kefi.vercel.app/"
     }
   },
   {
@@ -120,43 +120,43 @@ const projects: Project[] = [
       adminDashboard:"https://github.com/asyayakim/BookLibrary.Frontend",
     }
   },
-  {
-    id: 3,
-    slug: "project-3",
-    title: "Job-tracker",
-    description: "This project is under development and git hub links are not being provided.",
-    link: "/projects/project3",
-    details: {
-      overview: [
-        "Facilitates hotel management and bookings",
-        "Implements JWT-based authentication system",
-        "Provides dual interfaces for users and administrators"
+{
+  id: 3,
+  slug: "project-3",
+  title: "Charity Store",
+  description: "An online charity store that allows users to browse and purchase donated products while supporting charitable causes.",
+  link: "/projects/project3",
+  details: {
+    overview: [
+      "Provides an online platform for charity-based product sales",
+      "Supports product browsing and purchasing for social good",
+      "Includes management tools for products and orders"
+    ],
+    features: [
+      "Product listing and detailed product pages",
+      "Store browsing with categories",
+      "Shopping cart and checkout functionality",
+      "Order management system",
+      "Responsive and user-friendly UI",
+      "API-based product and store management"
+    ],
+    techStack: {
+      backend: [
+        "ASP.NET Core",
+        "Entity Framework Core"
       ],
-      features: [
-        "User authentication with role-based access",
-        "Hotel browsing with pagination and favorites",
-        "Reservation system with date selection",
-        "Secure payment processing integration",
-        "User profile management",
-        "Admin dashboard for hotel/reservation management"
+      frontend: [
+        "React",
+        "React Router",
+        "Axios"
       ],
-      techStack: {
-        backend: [
-          "ASP.NET Core",
-          "Entity Framework Core",
-        ],
-        frontend: [
-          "React",
-          "React Router",
-          "Axios",
-        ],
-        database: "PostgreSQL",
-        authentication: "JWT",
-        documentation: "Swagger"
-      }
-    },
+      database: "PostgreSQL",
+      authentication: "JWT",
+      documentation: "Swagger"
+    }
+  },
     links: {
- 
+   liveDemo: "https://product-service-frontend-git-main-asyayakims-projects.vercel.app",
     }
   },
 ];
@@ -259,8 +259,8 @@ export default function ProjectPage({ params }: PageProps) {
             <a href={project.links?.github} className="pixel-button bg-pixel-blue hover:bg-pixel-darkblue">
               GitHub Repository Backend
             </a>
-            <a href={project.links?.adminDashboard} className="pixel-button bg-pixel-purple hover:bg-pixel-darkpurple">
-              GitHub Repository Frontend
+            <a href={project.links?.liveDemo} className="pixel-button bg-pixel-purple hover:bg-pixel-darkpurple">
+              Live Demo
             </a>
           </div>
         </section>
