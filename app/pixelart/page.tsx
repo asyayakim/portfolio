@@ -39,16 +39,23 @@ const LoadPictures = () => {
   ];
 
   return (
-    <main className="mt-[15vh] space-y-6">
+    <main className="mb-[15vh] space-y-6">
       <h1 className="text-4xl font-bold">Some Works:</h1>
 
       <section className="space-y-8 max-w-6xl mx-auto">
         <article>
-          <div className="flex items-center gap-4 mb-4">
-            <h3 className="text-xl text-pixel-yellow">
-              After-Hours Creator
-            </h3>
-          </div>
+  
+        <span className="text-xs text-pixel-green opacity-70 tracking-widest uppercase">
+          {"// "} creative.exe
+        </span>
+        <h1 className="text-3xl text-pixel-yellow">Pixel Art Gallery</h1>
+        <p className="text-sm leading-relaxed max-w-2xl">
+          Before the code, there was the canvas. I've been making pixel art since
+          long before I wrote my first function — small scenes, looping worlds, 8×8
+          grids that somehow feel alive. This corner of my portfolio is where the
+          dev hat comes off and the artist takes over.
+        </p>
+  
         </article>
         <section className="space-y-6">
           <h3 className="text-2xl font-semibold">Pixel Verker</h3>
